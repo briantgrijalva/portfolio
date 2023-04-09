@@ -9,8 +9,8 @@
 
 }
 
-body {
-  font-family: var(--custom-font);
+main, nav {
+  font-family: var(--custom-font) !important;
 }
 
 h1 {

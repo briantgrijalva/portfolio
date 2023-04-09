@@ -7,10 +7,16 @@ import todo from '../assets/img/todolist-skill.png'
 import ProjectCard from '@/components/ProjectCard'
 import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
+import { font } from '@/assets/fonts/font'
+import Head from 'next/head'
+
 
 export default function HomePage () {
   return (
-    <>
+    <main className={font.variable}> 
+       <Head>
+        <title>Briant Grijalva</title>
+      </Head>
         <section className={styles.heroSection}>
           <div className='container'>
             <div className="row">
@@ -58,6 +64,6 @@ export default function HomePage () {
         <section id='contact' className='mt-5 pt-5 pb-5'>
           <Contact />
         </section>
-    </>
+    </main>
   )
 }

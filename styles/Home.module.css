@@ -65,3 +65,12 @@
     height: 100vh;
   }
 }
+@media screen and (max-width: 568px) {
+  .heroImageContainer {
+    padding-top: 20px;
+  }
+
+  .heroTitleContainer {
+    padding-top: 40px;
+  }
+}

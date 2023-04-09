@@ -1,0 +1,24 @@
+.projectImage {
+  border-radius: 16px;
+  box-shadow: 0 10px 75px -16px #555555;
+  transition: transform .3s ease;
+}
+
+.projectImage:hover {
+  transform: scale(1.03) rotate(1deg);
+}
+
+.tech {
+  padding: 8px 12px;
+  border-radius: 30px;
+  color: #087EA4;
+  border: 1px solid #087EA4;
+  display: inline-flex;
+  margin: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .projectImage {
+    margin-bottom: 32px;
+  }
+}

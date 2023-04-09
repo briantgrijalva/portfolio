@@ -11,11 +11,10 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
               <nav className="navbar bg-body-tertiary">
                 <div className="container">
                   <a className="navbar-brand" href="#">
-                    <Image src={logo} alt="Briant Grijalva Logo" width={48} height={48} />
+                    <Image src={logo} alt="Briant Grijalva Logo" width={48} height={48} className='img-fluid'/>
                   </a>
                 </div>
               </nav>
-              
               <div className="d-flex">
                 <a href='#work'>Work</a>
                 <a href='#contact'>Contact</a>

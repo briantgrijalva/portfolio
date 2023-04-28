@@ -60,9 +60,28 @@
   background : #087EA4 !important;
 }
 
+.serviceBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: #555555;
+  border: 3px #555 solid;
+  min-height: 324px;
+  padding: 20px 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+
+.serviceBox p {
+  padding-right: 0;
+}
+
 @media screen and (min-width: 992px) {
   .heroSection {
-    height: 100vh;
+    height: 88vh;
   }
 }
 @media screen and (max-width: 568px) {
@@ -72,5 +91,5 @@
 
   .heroTitleContainer {
     padding-top: 40px;
-  }
+  } 
 }

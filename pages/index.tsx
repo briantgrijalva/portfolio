@@ -9,6 +9,7 @@ import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
 import { font } from '@/assets/fonts/font'
 import Head from 'next/head'
+import Services from '@/components/Services'
 
 
 export default function HomePage () {
@@ -23,7 +24,7 @@ export default function HomePage () {
               <div className="col-md-12 col-sm-12 col-lg-7 order-sm-last order-lg-first">
                 <div className={styles.heroTitleContainer}>
                   <h1>Briant Grijalva Web Developer</h1>
-                  <p className='mt-4'>25 year old full stack web developer. Most of my current experience is building web apps, websites and mobile apps.</p>
+                  <p className='mt-4'>I&apos;m a full stack web developer. Most of my current experience is building web apps, websites and mobile apps.</p>
                   {/* <a className={styles.primaryBtn} href="#work">My Work</a> */}
                 
                   <div className="btn_container mt-5">
@@ -47,15 +48,23 @@ export default function HomePage () {
             </div>
           </div>
         </section>
-        <section id='work' className='mb-5 pb-5'>
-          <div className='mt-5 py-5 mb-5'>
-            <ProjectCard name='PaperShipX' description="An android videogame I've created, It has a paper inspired design, people who have played it say it's too hard" technologies={['Unity', 'C#', 'Illustrator', 'Videogame design']} reverse={false} image={PaperShipX} />
+        <section id='work' className='my-5 py-5'>
+          <Services />
+        </section>
+        <section className='mt-5 py-5 mb-5'>
+          <div className="row justify-content-center pt-5 mt-5">
+            <div className="col-md-12 col-sm-12 col-lg-6 text-center">
+              <h2>A few projects that I&apos;ve worked on</h2>
+            </div>
           </div>
           <div className='mt-5 py-5 mb-5'>
-            <ProjectCard name='To-Do App' description='A minimal To-Do List App' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML', 'TypeScript']} reverse={true} image={todo} />
+            <ProjectCard name='PaperShipX' description="An android videogame I've created, It has a paper inspired design, people who have played it say it's too hard." technologies={['Unity', 'C#', 'Illustrator', 'Videogame design']} reverse={false} image={PaperShipX} />
           </div>
           <div className='mt-5 py-5 mb-5'>
-            <ProjectCard name='Inventory App' description='An Inventory App that was created by a friend and me just for fun' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML']} reverse={false} image={inventory} />
+            <ProjectCard name='To-Do App' description='A minimal To-Do List App.' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML', 'TypeScript']} reverse={true} image={todo} />
+          </div>
+          <div className='mt-5 py-5 mb-5'>
+            <ProjectCard name='Inventory App' description='An Inventory App that was created by a friend and me just for fun.' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML']} reverse={false} image={inventory} />
           </div>
         </section>
         <section id='skills' className='mt-5 pt-5 mb-5 pb-5'>

@@ -286,7 +286,9 @@ a {
   border-radius: 8px;
   box-shadow: 0 10px 75px -16px #555555;
   min-height: 150px;
+  /* min-height: 70px; */
   transition: all .3s ease;
+  /* border: 3px solid #555; */
 }
 
 .card-div:hover {
@@ -296,14 +298,18 @@ a {
 
 .card-div:hover p {
   color: #DEFFFA;
-  letter-spacing : 6px;
+  /* letter-spacing : 2px; */
 }
 
 .card-div p {
+  margin-top: 12px;
   transition: all .3s ease;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   padding-right: 0;
   text-align: center;
+  font-weight: bold;
+  color: #555555;
+  font-size: 20px;
 }
 
 #contact {

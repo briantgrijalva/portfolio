@@ -11,7 +11,6 @@ import { font } from '@/assets/fonts/font'
 import Head from 'next/head'
 import Services from '@/components/Services'
 
-
 export default function HomePage () {
   return (
     <main className={font.variable}> 

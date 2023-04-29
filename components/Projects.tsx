@@ -12,13 +12,13 @@ export default function Projects () {
       </div>
     
       <div className='mt-5 py-5 mb-5'>
-        <ProjectCard name='PaperShipX' description="An android videogame I've created, It has a paper inspired design, people who have played it say it's too hard." technologies={['Unity', 'C#', 'Illustrator', 'Videogame design']} reverse={false} image={PaperShipX} />
+        <ProjectCard name='PaperShipX' description="An android videogame I've created, It has a paper inspired design, people who have played it say it's too hard." technologies={['Unity', 'C#', 'Illustrator', 'Videogame design']} reverse={false} image={PaperShipX} url='https://play.google.com/store/apps/details?id=com.KirinXstudio.PaperShipX'/>
       </div>
       <div className='mt-5 py-5 mb-5'>
-        <ProjectCard name='To-Do App' description='A minimal To-Do List App.' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML', 'TypeScript']} reverse={true} image={todo} />
+        <ProjectCard name='To-Do App' description='A minimal To-Do List App.' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML', 'TypeScript']} reverse={false} image={todo} url='https://skill-todo-list.netlify.app/' />
       </div>
       <div className='mt-5 py-5 mb-5'>
-        <ProjectCard name='Inventory App' description='An Inventory App that was created by a friend and me just for fun.' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML']} reverse={false} image={inventory} />
+        <ProjectCard name='Inventory App' description='An Inventory App that was created by a friend and me just for fun.' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML']} reverse={false} image={inventory} url='https://inventario-mb.netlify.app/' />
       </div>
     </div>
     )

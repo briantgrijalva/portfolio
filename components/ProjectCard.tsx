@@ -8,10 +8,11 @@ interface Props {
   reverse : boolean
   name: string
   description: string
-  technologies: string[]
+  technologies?: string[]
+  url: string
 }
 
-export default function ProjectCard ({ image, reverse = false, name, description, technologies }: Props) {
+export default function ProjectCard ({ image, reverse = false, name, description, technologies, url }: Props) {
   
   const [screen, setScreen] = useState<any>({});
 
@@ -30,7 +31,7 @@ export default function ProjectCard ({ image, reverse = false, name, description
     }
 
   return (
-    <div className='container'>
+    <div className={styles.projectCard + ' container'} >
       {
         reverse ? 
         
@@ -47,7 +48,16 @@ export default function ProjectCard ({ image, reverse = false, name, description
                 <h3>{name}</h3>
                 <p>{description}</p>
                 <div>
-                  {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))}
+                  {/* {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))} */}
+                  <div className="btn_container mt-1">
+                  <a href={url} target='_blank' className="button">
+                    <div className="button__line"></div>
+                    <div className="button__line"></div>
+                    <span className="button__text">VIEW PROJECT</span>
+                    <div className="button__drow1"></div>
+                    <div className="button__drow2"></div>
+                  </a>
+                </div>
                 </div>
               </div>
             </div>
@@ -77,7 +87,16 @@ export default function ProjectCard ({ image, reverse = false, name, description
               <h3>{name}</h3>
               <p>{description}</p>
               <div>
-                {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))}
+                {/* {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))} */}
+                <div className="btn_container mt-1">
+                  <a href={url} target='_blank' className="button">
+                    <div className="button__line"></div>
+                    <div className="button__line"></div>
+                    <span className="button__text">VIEW PROJECT</span>
+                    <div className="button__drow1"></div>
+                    <div className="button__drow2"></div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ export default function Services () {
           <div className={styles.serviceBox}>
             <HiCode size={80} color="#555555"/>
             <h3 className='mt-4'>Web Development</h3>
-            <p>I can help you with your app development.</p>
+            <p>If you have the next Twitter in your mind I can help you build anything you&apos;re envisioning.</p>
           </div>
         </div>
 
@@ -17,7 +17,7 @@ export default function Services () {
           <div className={styles.serviceBox}>
             <MdComputer size={80} color="#555555"/>
             <h3 className='mt-4'>Website building</h3>
-            <p>Build a new Website for your business, rework your website.</p>
+            <p>If you&apos;re looking to build a custom website I can help you build a website for your business.</p>
           </div>
         </div>
         
@@ -25,7 +25,7 @@ export default function Services () {
           <div className={styles.serviceBox}>
             <MdDesignServices size={80} color="#555555"/>
             <h3 className='mt-4'>Custom UI/UX Design</h3>
-            <p>UI / UX Design for your website.</p>
+            <p>Whether you need a custom UI/UX design for your website or app I can help you design it for you.</p>
           </div>
         </div>
 

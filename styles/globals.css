@@ -292,12 +292,12 @@ a {
 }
 
 .card-div:hover {
-  background-color: #555555;
-  box-shadow: 0 48px 75px -16px #121212;
+  background-color: #DEFFFA;
+  box-shadow: 0 48px 75px -16px #DEFFFA;
 }
 
 .card-div:hover p {
-  color: #DEFFFA;
+  color: #555555;
   /* letter-spacing : 2px; */
 }
 

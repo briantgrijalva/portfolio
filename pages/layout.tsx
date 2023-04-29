@@ -9,7 +9,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
           <nav className="navbar navbar-expand bg-body-tertiary">
             <div className="container-fluid">
               <nav className="navbar bg-body-tertiary">
-                <div className="container">
+                <div className="">
                   <a className="navbar-brand" href="#">
                     <Image src={logo} alt="Briant Grijalva Logo" width={48} height={48} className='img-fluid'/>
                   </a>

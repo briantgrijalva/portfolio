@@ -92,4 +92,8 @@
   .heroTitleContainer {
     padding-top: 40px;
   } 
+
+  .buttonNoline {
+    font-size: 16px;
+  }
 }

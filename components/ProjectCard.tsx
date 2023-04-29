@@ -49,7 +49,7 @@ export default function ProjectCard ({ image, reverse = false, name, description
                 <p>{description}</p>
                 <div>
                   {/* {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))} */}
-                  <div className="btn_container mt-1">
+                  <div className="btn_container mt-1 mb-3">
                   <a href={url} target='_blank' className="button">
                     <div className="button__line"></div>
                     <div className="button__line"></div>
@@ -88,7 +88,7 @@ export default function ProjectCard ({ image, reverse = false, name, description
               <p>{description}</p>
               <div>
                 {/* {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))} */}
-                <div className="btn_container mt-1">
+                <div className="btn_container mt-1 mb-3">
                   <a href={url} target='_blank' className="button">
                     <div className="button__line"></div>
                     <div className="button__line"></div>

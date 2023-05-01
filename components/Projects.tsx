@@ -15,6 +15,7 @@ export default function Projects () {
         <ProjectCard name='PaperShipX' description="An android videogame I've created, It has a paper inspired design, people who have played it say it's too hard." technologies={['Unity', 'C#', 'Illustrator', 'Videogame design']} reverse={false} image={PaperShipX} url='https://play.google.com/store/apps/details?id=com.KirinXstudio.PaperShipX'/>
       </div>
       <div className='mt-5 py-5 mb-5'>
+        {/* // TODO: replace with boomerang webiste, or another project*/}
         <ProjectCard name='To-Do App' description='A minimal To-Do List App.' technologies={['React', 'Node JS', 'MongoDB', 'CSS', 'Bootstrap', 'HTML', 'TypeScript']} reverse={false} image={todo} url='https://skill-todo-list.netlify.app/' />
       </div>
       <div className='mt-5 py-5 mb-5'>

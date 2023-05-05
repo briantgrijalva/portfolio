@@ -8,7 +8,7 @@ interface Props {
   reverse : boolean
   name: string
   description: string
-  technologies?: string[]
+  technologies: string[]
   url: string
 }
 
@@ -37,19 +37,12 @@ export default function ProjectCard ({ image, reverse = false, name, description
         
           <div className="row">
             <div className="col-md-6 col-sm-12">
-              <div 
-                style={{
-                  height: '100%',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center'
-                }}
-              >
+              <div className={styles.contentContainer} >
                 <h3>{name}</h3>
                 <p>{description}</p>
                 <div>
-                  {/* {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))} */}
-                  <div className="btn_container mt-1 mb-3">
+                  {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))}
+                  <div className="btn_container mt-4 mb-3">
                   <a href={url} target='_blank' className="button">
                     <div className="button__line"></div>
                     <div className="button__line"></div>
@@ -76,19 +69,12 @@ export default function ProjectCard ({ image, reverse = false, name, description
             </div>
           </div>
           <div className="col-md-6 col-sm-12 ">
-            <div 
-              style={{
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center'
-              }}
-            >
+            <div className={styles.contentContainer} >
               <h3>{name}</h3>
               <p>{description}</p>
               <div>
-                {/* {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))} */}
-                <div className="btn_container mt-1 mb-3">
+                {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))}
+                <div className="btn_container mt-4 mb-3">
                   <a href={url} target='_blank' className="button">
                     <div className="button__line"></div>
                     <div className="button__line"></div>

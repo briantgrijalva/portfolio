@@ -7,10 +7,20 @@ import { font } from '@/assets/fonts/font'
 import Head from 'next/head'
 import Services from '@/components/Services'
 import Projects from '@/components/Projects'
+import Script from 'next/script'
 
 export default function HomePage () {
   return (
     <main className={font.variable}> 
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-YESP3TP49C"></Script>
+      <Script id="google-analytics" strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YESP3TP49C');`}
+      </Script>
        <Head>
         <title>Briant Grijalva</title>
       </Head>

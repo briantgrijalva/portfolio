@@ -37,9 +37,9 @@ export default function HomePage () {
         <link rel="icon" href="/favicon.ico" />
 
         {/* Add hreflang links */}
-        <link rel="alternate" href="http://example.com" hrefLang="x-default" />
-        <link rel="alternate" href="http://example.com" hrefLang="en" />
-        <link rel="alternate" href="http://example.com/es" hrefLang="es" />
+        <link rel="alternate" href="https://briantgrijalva.com" hrefLang="x-default" />
+        <link rel="alternate" href="https://briantgrijalva.com" hrefLang="en" />
+        <link rel="alternate" href="https://briantgrijalva.com/es" hrefLang="es" />
       </Head>
         <section className={styles.heroSection}>
           <div className='container'>

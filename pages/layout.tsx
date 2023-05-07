@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import logo from '../assets/img/logo.svg'
 import { font } from '@/assets/fonts/font'
+import { FormattedMessage } from 'react-intl'
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <>
@@ -16,8 +17,8 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
                 </div>
               </nav>
               <div className="d-flex">
-                <a href='#work'>Work</a>
-                <a href='#contact'>Contact</a>
+                <a href='#work'><FormattedMessage id="page.nav.work" /></a>
+                <a href='#contact'><FormattedMessage id="page.nav.contact" /></a>
 
                 <div style={{width: '1px', backgroundColor: '#141414'}}></div>
                 <a href="https://github.com/briantgrijalva" target='_BLANK' className={styles.socialIcon}>

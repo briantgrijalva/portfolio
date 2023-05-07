@@ -3,6 +3,11 @@ const nextConfig = {
   // experimental: {
   //   appDir: true,
   // },
+  i18n: {
+    locales: ['es', 'en'],
+    defaultLocale: 'es',
+    localeDetection: true,
+  },
   reactStrictMode: true,
   images: {
     dangerouslyAllowSVG: true,

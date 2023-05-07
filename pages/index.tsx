@@ -8,8 +8,18 @@ import Head from 'next/head'
 import Services from '@/components/Services'
 import Projects from '@/components/Projects'
 import Script from 'next/script'
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { FormattedMessage, useIntl } from "react-intl";
+
 
 export default function HomePage () {
+  const { locales } = useRouter();
+
+  const intl = useIntl();
+
+  const title = intl.formatMessage({ id: "page.home.head.title" });
+  const description = intl.formatMessage({ id: "page.home.head.meta.description" });
   return (
     <main className={font.variable}> 
       {/* <!-- Google tag (gtag.js) --> */}
@@ -22,23 +32,30 @@ export default function HomePage () {
         gtag('config', 'G-YESP3TP49C');`}
       </Script>
        <Head>
-        <title>Briant Grijalva</title>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Add hreflang links */}
+        <link rel="alternate" href="http://example.com" hrefLang="x-default" />
+        <link rel="alternate" href="http://example.com" hrefLang="en" />
+        <link rel="alternate" href="http://example.com/es" hrefLang="es" />
       </Head>
         <section className={styles.heroSection}>
           <div className='container'>
             <div className="row">
               <div className="col-md-12 col-sm-12 col-lg-7 order-sm-last order-lg-first">
                 <div className={styles.heroTitleContainer}>
-                  <h1>Briant Grijalva Web Developer</h1>
-                  <p className='mt-4'>I&apos;m a full stack web developer. Most of my current experience is building web apps, websites and mobile apps.</p>
-                  {/* <a className={styles.primaryBtn} href="#work">My Work</a> */}
+                  <h1><FormattedMessage id="page.home.title" /></h1>
+                  
+                  <p className='mt-4'><FormattedMessage id="page.home.description" /></p>
                 
                   <div className="btn_container mt-5">
 
                     <a href="#work" className="button">
                       <div className="button__line"></div>
                       <div className="button__line"></div>
-                      <span className="button__text">MY WORK</span>
+                      <span className="button__text"><FormattedMessage id="page.home.button" /></span>
                       <div className="button__drow1"></div>
                       <div className="button__drow2"></div>
                     </a>

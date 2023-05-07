@@ -1,0 +1,22 @@
+{
+  "page.home.head.title": "Briant Grijalva",
+  "page.home.head.meta.description": "I'm a full stack web developer. Most of my current experience is building web apps, websites and mobile apps.",
+  "page.nav.work": "Work",
+  "page.nav.contact": "Contact",
+  "page.home.title": "Briant Grijalva Web Developer",
+  "page.home.description": "I'm a full stack web developer. Most of my current experience is building web apps, websites and mobile apps.",
+  "page.home.button": "MY WORK",
+  "page.home.services.first.title": "Web Development",
+  "page.home.services.first.description": "If you have the next Twitter in your mind I can help you build anything you're envisioning.",
+  "page.home.services.second.title": "Website building",
+  "page.home.services.second.description": "If you're looking to build a custom website I can help you build a website for your business.",
+  "page.home.services.third.title": "Custom UI/UX Design",
+  "page.home.services.third.description": "Whether you need a custom UI/UX design for your website or app I can help you design it for you.",
+  "page.home.projects.title": "A few projects that I've worked on",
+  "page.home.projects.first": "A productivity Android app, based on the pomodoro technique, It has a minimal design.",
+  "page.home.projects.second": "An android videogame I've created, It has a paper inspired design, people who have played it say it's too hard.",
+  "page.home.projects.third": "A minimal To-Do List App.",
+  "page.home.projects.fourth": "An Inventory App that was created by a friend and me just for fun.",
+  "page.home.projects.button": "VIEW PROJECT",
+  "page.home.contact": "If you need help or want to work with me, don't hesitate to contact me."
+}

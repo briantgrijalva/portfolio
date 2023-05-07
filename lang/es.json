@@ -1,0 +1,22 @@
+{
+  "page.home.head.title": "Briant Grijalva",
+  "page.home.head.meta.description": "Soy un desarrollador web full stack. La mayor parte de mi experiencia actual es la creación de aplicaciones web, sitios web y aplicaciones móviles.",
+  "page.nav.work": "Trabajo",
+  "page.nav.contact": "Contacto",
+  "page.home.title": "Briant Grijalva Desarrollador Web",
+  "page.home.description": "Soy un desarrollador web full stack. La mayor parte de mi experiencia actual es la creación de aplicaciones web, sitios web y aplicaciones móviles.",
+  "page.home.button": "MI TRABAJO",
+  "page.home.services.first.title": "Desarrollo Web",
+  "page.home.services.first.description": "Si tienes el siguiente Twitter en tu mente puedo ayudarte a construir todo lo que estas visualizando.",
+  "page.home.services.second.title": "Construcción de Sitios Web",
+  "page.home.services.second.description": "Si estas buscando construir un sitio web personalizado puedo ayudarte a construir un sitio web para tu negocio.",
+  "page.home.services.third.title": "Diseño UI/UX personalizado",
+  "page.home.services.third.description": "Si necesitas Diseño UI/UX personalizado para tu sitio web o app yo puedo ayudarte diseñandolo para tí.",
+  "page.home.projects.title": "Algunos proyectos en los que he trabajado.",
+  "page.home.projects.first": "Una app de productividad para android, basada en la técnica del pomodoro, con un diseño minimalista.",
+  "page.home.projects.second": "Un videojuego que hé creado, tiene un diseño inspirado en el papel, personas quienes lo han jugado me han dicho que es demasiado dificil.",
+  "page.home.projects.third": "Un To-Do List App minimalista.",
+  "page.home.projects.fourth": "Una App de Inventario que fue creada por un amigo y yo solo por diversión.",
+  "page.home.projects.button": "VER PROYECTO",
+  "page.home.contact": "Si necesitas ayuda o quieres trabajar conmigo, no dudes en contactarme."
+}

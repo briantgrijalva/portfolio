@@ -1,10 +1,11 @@
+import { FormattedMessage } from 'react-intl'
 import styles from '../styles/Home.module.css'
 export default function Contact () {
   return (
     <div className="container">
       <div className="row justify-content-center">
         <div className="col">
-          <p style={{textAlign: 'center', paddingRight: 0}}>If you need help or want to work with me, don&apos;t hesitate to contact me.</p>
+          <p style={{textAlign: 'center', paddingRight: 0}}><FormattedMessage id="page.home.contact" /></p>
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <a href="https://github.com/briantgrijalva" target='_BLANK' className={styles.contactIcon }>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">

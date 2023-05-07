@@ -2,12 +2,13 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/ProjectCard.module.css' 
 import Image, { StaticImageData } from "next/image"
+import { FormattedMessage } from 'react-intl'
 
 interface Props {
   image: string | StaticImageData
   reverse : boolean
   name: string
-  description: string
+  description: string | number | boolean | React.ReactElement | React.ReactFragment | React.ReactPortal 
   technologies: string[]
   url: string
 }
@@ -46,7 +47,7 @@ export default function ProjectCard ({ image, reverse = false, name, description
                   <a href={url} target='_blank' className="button">
                     <div className="button__line"></div>
                     <div className="button__line"></div>
-                    <span className="button__text">VIEW PROJECT</span>
+                    <span className="button__text"><FormattedMessage id="page.home.projects.button" /></span>
                     <div className="button__drow1"></div>
                     <div className="button__drow2"></div>
                   </a>
@@ -78,7 +79,7 @@ export default function ProjectCard ({ image, reverse = false, name, description
                   <a href={url} target='_blank' className="button">
                     <div className="button__line"></div>
                     <div className="button__line"></div>
-                    <span className="button__text">VIEW PROJECT</span>
+                    <span className="button__text"><FormattedMessage id="page.home.projects.button" /></span>
                     <div className="button__drow1"></div>
                     <div className="button__drow2"></div>
                   </a>

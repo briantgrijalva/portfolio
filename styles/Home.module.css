@@ -36,7 +36,7 @@
 }
 
 .buttonNoline {
-  letter-spacing: normal;
+  letter-spacing: normal !important;
   font-size: 20px;
 }
 

@@ -11,6 +11,7 @@ import Script from 'next/script'
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
+import { Fab } from '@/components/Fab'
 
 
 export default function HomePage () {
@@ -83,6 +84,7 @@ export default function HomePage () {
         <section id='contact' className='mt-5 pt-5 pb-5'>
           <Contact />
         </section>
+        <Fab />
     </main>
   )
 }

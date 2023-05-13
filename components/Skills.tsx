@@ -18,6 +18,22 @@ export default function Skills () {
   return (
     <div className="container">
       <div className="row justify-content-center">
+      <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
+          <div className="card-div">
+            <Image src={hubspot} className={'img-fluid'} alt="HubSpot" width={50} height={50} style={{maxHeight: '50px'}}/>
+              <div className="">
+                <p className="card-text skill-card-p">HubSpot</p>
+              </div>
+          </div>
+        </div>
+        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
+          <div className="card-div">
+            <Image src={wordpress} className={'img-fluid'} alt="WordPress" width={50} height={50} style={{maxHeight: '50px'}}/>
+              <div className="">
+                <p className="card-text skill-card-p">WordPress</p>
+              </div>
+          </div>
+        </div>
         <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
           <div className="card-div">
             <Image src={react} className={'img-fluid'} alt="React" width={50} height={50} style={{maxHeight: '50px'}}/>
@@ -47,6 +63,22 @@ export default function Skills () {
             <Image src={htmlCssJs} className={'img-fluid'} alt="HTML CSS JS" width={50} height={50} style={{maxHeight: '50px'}}/>
               <div className="">
                 <p className="card-text skill-card-p">HTML, CSS, JS</p>
+              </div>
+          </div>
+        </div>
+        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
+          <div className="card-div">
+            <Image src={next} className={'img-fluid'} alt="Next JS" width={50} height={50} style={{maxHeight: '50px'}}/>
+              <div className="">
+                <p className="card-text skill-card-p">Next Js</p>
+              </div>
+          </div>
+        </div>
+        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
+          <div className="card-div">
+            <Image src={nuxt} className={'img-fluid'} alt="Nuxt JS" width={50} height={50} style={{maxHeight: '50px'}}/>
+              <div className="">
+                <p className="card-text skill-card-p">Nuxt Js</p>
               </div>
           </div>
         </div>
@@ -95,38 +127,6 @@ export default function Skills () {
             <Image src={bulma} className={'img-fluid'} alt="Bulma" width={50} height={50} style={{maxHeight: '50px'}}/>
               <div className="">
                 <p className="card-text skill-card-p">Bulma</p>
-              </div>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
-          <div className="card-div">
-            <Image src={next} className={'img-fluid'} alt="Next JS" width={50} height={50} style={{maxHeight: '50px'}}/>
-              <div className="">
-                <p className="card-text skill-card-p">Next Js</p>
-              </div>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
-          <div className="card-div">
-            <Image src={nuxt} className={'img-fluid'} alt="Nuxt JS" width={50} height={50} style={{maxHeight: '50px'}}/>
-              <div className="">
-                <p className="card-text skill-card-p">Nuxt Js</p>
-              </div>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
-          <div className="card-div">
-            <Image src={hubspot} className={'img-fluid'} alt="HubSpot" width={50} height={50} style={{maxHeight: '50px'}}/>
-              <div className="">
-                <p className="card-text skill-card-p">HubSpot</p>
-              </div>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
-          <div className="card-div">
-            <Image src={wordpress} className={'img-fluid'} alt="WordPress" width={50} height={50} style={{maxHeight: '50px'}}/>
-              <div className="">
-                <p className="card-text skill-card-p">WordPress</p>
               </div>
           </div>
         </div>

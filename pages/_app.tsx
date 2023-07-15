@@ -26,7 +26,7 @@ export default function MyApp({ Component, pageProps }:any) {
       <RootLayout>
         <Component {...pageProps}/>
       </RootLayout>
-  </IntlProvider>
+    </IntlProvider>
     
   )
 }

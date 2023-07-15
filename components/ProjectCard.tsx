@@ -11,9 +11,12 @@ interface Props {
   description: string | number | boolean | React.ReactElement | React.ReactFragment | React.ReactPortal 
   technologies: string[]
   url: string
+  addLink?: boolean
+  extraLink?: string
+  extraLinkText?: string
 }
 
-export default function ProjectCard ({ image, reverse = false, name, description, technologies, url }: Props) {
+export default function ProjectCard ({ image, reverse = false, name, description, technologies, url, addLink, extraLink, extraLinkText }: Props) {
   
   const [screen, setScreen] = useState<any>({});
 
@@ -40,7 +43,7 @@ export default function ProjectCard ({ image, reverse = false, name, description
             <div className="col-md-6 col-sm-12">
               <div className={styles.contentContainer} >
                 <h3>{name}</h3>
-                <p>{description}</p>
+                <p>{description} {addLink && <a className={styles.externalLink} target='_blank' href={extraLink}>{extraLinkText}</a>}</p>
                 <div>
                   {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))}
                   <div className="btn_container mt-4 mb-3">
@@ -72,7 +75,8 @@ export default function ProjectCard ({ image, reverse = false, name, description
           <div className="col-md-6 col-sm-12 ">
             <div className={styles.contentContainer} >
               <h3>{name}</h3>
-              <p>{description}</p>
+              <p>{description} {addLink && <a className={styles.externalLink} target='_blank' href={extraLink}>{extraLinkText}</a>}</p>
+              
               <div>
                 {technologies.map( t => (<span key={t} className={styles.tech}>{t}</span>))}
                 <div className="btn_container mt-4 mb-3">

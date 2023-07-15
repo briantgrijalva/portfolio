@@ -36,6 +36,11 @@
   font-weight: bold;
 }
 
+.externalLink {
+  color: #087EA4 !important;
+  margin: 0;
+}
+
 @media screen and (max-width: 768px) {
   .projectImage {
     margin-bottom: 32px;

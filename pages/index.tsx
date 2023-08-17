@@ -36,12 +36,14 @@ export default function HomePage () {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image:url" content="https://briantgrijalva.com/briant-grijalva.jpg" />
 
         {/* Add hreflang links */}
         <link rel="alternate" href="https://briantgrijalva.com" hrefLang="x-default" />
         <link rel="alternate" href="https://briantgrijalva.com" hrefLang="en" />
         <link rel="alternate" href="https://briantgrijalva.com/es" hrefLang="es" />
       </Head>
+      
         <section className={styles.heroSection}>
           <div className='container'>
             <div className="row">

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import briantGrijalva from '../assets/img/briant-grijalva.jpg'
 import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
 import { font } from '@/assets/fonts/font'
@@ -35,7 +36,7 @@ export default function HomePage () {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image:url" content="https://raw.githubusercontent.com/briantgrijalva/portfolio/main/assets/img/briant-grijalva.jpg" />
+        <meta property="og:image:url" content="https://briantgrijalva.com/briant-grijalva.jpg" />
 
         {/* Add hreflang links */}
         <link rel="alternate" href="https://briantgrijalva.com" hrefLang="x-default" />
@@ -67,7 +68,7 @@ export default function HomePage () {
               </div>
               <div className="col-md-12 col-sm-12 col-lg-5 order-md-first order-sm-first order-first">
                 <div className={styles.heroImageContainer}>
-                  <Image src={'https://raw.githubusercontent.com/briantgrijalva/portfolio/main/assets/img/briant-grijalva.jpg'} className={styles.heroImage + ' img-fluid'} alt="Briant Grijalva" width={500} height={500} />
+                  <Image src={briantGrijalva} className={styles.heroImage + ' img-fluid'} alt="Briant Grijalva" width={500} height={500} />
                 </div>
               </div>
             </div>

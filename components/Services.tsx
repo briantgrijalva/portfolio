@@ -16,7 +16,7 @@ export default function Services () {
             <HiCode size={80} color="#555555"/>
             <h3 className='mt-4'><FormattedMessage id="page.home.services.first.title" /></h3>
             <p><FormattedMessage id="page.home.services.first.description" /></p>
-            <a href={'#contact'} target='_blank' className="button">
+            <a href={'#contact'} className="button">
               <div className="button__line"></div>
               <div className="button__line"></div>
               <span className="button__text"><FormattedMessage id="page.home.services.button" /></span>
@@ -31,7 +31,7 @@ export default function Services () {
             <MdComputer size={80} color="#555555"/>
             <h3 className='mt-4'><FormattedMessage id="page.home.services.second.title" /></h3>
             <p><FormattedMessage id="page.home.services.second.description" /></p>
-            <a href={'#contact'} target='_blank' className="button">
+            <a href={'#contact'} className="button">
               <div className="button__line"></div>
               <div className="button__line"></div>
               <span className="button__text"><FormattedMessage id="page.home.services.button" /></span>
@@ -46,7 +46,7 @@ export default function Services () {
             <MdDesignServices size={80} color="#555555"/>
             <h3 className='mt-4'><FormattedMessage id="page.home.services.third.title" /></h3>
             <p><FormattedMessage id="page.home.services.third.description" /></p>
-            <a href={'#contact'} target='_blank' className="button">
+            <a href={'#contact'} className="button">
               <div className="button__line"></div>
               <div className="button__line"></div>
               <span className="button__text"><FormattedMessage id="page.home.services.button" /></span>

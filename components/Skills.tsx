@@ -9,8 +9,6 @@ import bootstrap from '../assets/img/skills/bootstrap.png'
 import unity from '../assets/img/skills/unity.png'
 import bulma from '../assets/img/skills/bulma.svg'
 import next from '../assets/img/skills/next-js.svg'
-import nuxt from '../assets/img/skills/nuxt-2.svg'
-import vue from '../assets/img/skills/vue-js-1.svg'
 import hubspot from '../assets/img/skills/hubspot-1.svg'
 import wordpress from '../assets/img/skills/wordpress-blue.svg'
 
@@ -44,14 +42,6 @@ export default function Skills () {
         </div>
         <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
           <div className="card-div">
-            <Image src={vue} className={'img-fluid'} alt="Vue JS" width={50} height={50} style={{maxHeight: '50px'}}/>
-              <div className="">
-                <p className="card-text skill-card-p">Vue JS</p>
-              </div>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
-          <div className="card-div">
             <Image src={node} className={'img-fluid'} alt="Node" width={50} height={50} style={{maxHeight: '50px'}}/>
               <div className="">
                 <p className="card-text skill-card-p">Node JS</p>
@@ -71,14 +61,6 @@ export default function Skills () {
             <Image src={next} className={'img-fluid'} alt="Next JS" width={50} height={50} style={{maxHeight: '50px'}}/>
               <div className="">
                 <p className="card-text skill-card-p">Next Js</p>
-              </div>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
-          <div className="card-div">
-            <Image src={nuxt} className={'img-fluid'} alt="Nuxt JS" width={50} height={50} style={{maxHeight: '50px'}}/>
-              <div className="">
-                <p className="card-text skill-card-p">Nuxt Js</p>
               </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
 {
   "page.home.head.title": "Briant Grijalva - Web Developer",
-  "page.home.head.meta.description": "I'm a full stack web developer. Most of my current experience is building web apps, websites and mobile apps.",
+  "page.home.head.meta.description": "Full stack web developer. Creation of websites, web applications, and UI/UX design.",
   "page.nav.work": "Work",
   "page.nav.contact": "Contact",
   "page.home.title": "Briant Grijalva Web Developer",
-  "page.home.description": "I am a full stack web developer with extensive experience in creating web applications, websites, and UI/UX design. My expertise covers everything from frontend development to backend implementation, ensuring efficient and scalable solutions. If you are looking for a web developer specialized in building robust digital platforms, contact me!.",
+  "page.home.description": "I transform ideas into digital experiences. As a seasoned full stack web developer, I specialize in creating web applications and sites that not only work but stand out. I have helped marketing, fintech, and audiovisual production companies achieve their digital goals, and I can do the same for you. Ready to take your project to the next level? Contact me, and let's discuss how we can make it happen!",
   "page.home.button": "MY WORK",
   "page.home.services.title": "My Services",
   "page.home.services.first.title": "Web Development",
@@ -19,6 +19,7 @@
   "page.home.projects.neweyesmedia": "new eyes media was redesigned to enhance the user experience and interaction with the brand.",
   "page.home.projects.fifth": "An app with all League of Legends champions, It's using the ",
   "page.home.projects.button": "VIEW PROJECT",
+  "page.home.skills.title": "My skills",
   "page.home.contact": "If you need help or want to work with me, don't hesitate to contact me.",
   "page.home.fab": "Chat with me"
 }

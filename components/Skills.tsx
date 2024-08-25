@@ -11,11 +11,17 @@ import bulma from '../assets/img/skills/bulma.svg'
 import next from '../assets/img/skills/next-js.svg'
 import hubspot from '../assets/img/skills/hubspot-1.svg'
 import wordpress from '../assets/img/skills/wordpress-blue.svg'
+import { FormattedMessage } from "react-intl";
 
 export default function Skills () {
   return (
     <div className="container">
-      <div className="row justify-content-center">
+      <div className="row justify-content-center mt-5">
+        <div className="col-md-12 col-sm-12 col-lg-6 text-center">
+          <h2><FormattedMessage id="page.home.skills.title" /></h2>
+        </div>
+      </div>
+      <div className="row justify-content-center mt-5">
       <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
           <div className="card-div">
             <Image src={hubspot} className={'img-fluid'} alt="HubSpot" width={50} height={50} style={{maxHeight: '50px'}}/>
@@ -109,14 +115,6 @@ export default function Skills () {
             <Image src={bulma} className={'img-fluid'} alt="Bulma" width={50} height={50} style={{maxHeight: '50px'}}/>
               <div className="">
                 <p className="card-text skill-card-p">Bulma</p>
-              </div>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-3 col-sm-4 col-6 pt-3 pb-3">
-          <div className="card-div">
-            <Image src={unity} className={'img-fluid'} alt="Unity" width={50} height={50} style={{maxHeight: '50px'}}/>
-              <div className="">
-                <p className="card-text skill-card-p">Unity</p>
               </div>
           </div>
         </div>

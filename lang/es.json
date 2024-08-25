@@ -1,10 +1,10 @@
 {
   "page.home.head.title": "Briant Grijalva - Desarrollador Web",
-  "page.home.head.meta.description": "Soy un desarrollador web full stack. La mayor parte de mi experiencia actual es la creación de aplicaciones web, sitios web y aplicaciones móviles.",
+  "page.home.head.meta.description": "Desarrollador web full stack. creación de paginas web, aplicaciones web y diseño UI/UX.",
   "page.nav.work": "Trabajo",
   "page.nav.contact": "Contacto",
   "page.home.title": "Briant Grijalva Desarrollador Web",
-  "page.home.description": "Soy un desarrollador web full stack con amplia experiencia en la creación de aplicaciones web, sitios web y diseño UI/UX. Mi enfoque abarca desde el desarrollo del frontend hasta la implementación del backend, garantizando soluciones eficientes y escalables. Si buscas un desarrollador web especializado en la construcción de plataformas digitales robustas, ¡contáctame!.",
+  "page.home.description": "Transformo ideas en experiencias digitales. Como desarrollador web full stack con amplia experiencia, me especializo en crear aplicaciones web y sitios que no solo funcionan, sino que destacan. He ayudado a empresas de marketing, fintech y de producción audiovisual a alcanzar sus objetivos digitales, y puedo hacer lo mismo por ti. ¿Listo para llevar tu proyecto al siguiente nivel? ¡Contáctame y hablemos de cómo podemos hacerlo realidad!.",
   "page.home.button": "MI TRABAJO",
   "page.home.services.title": "Mis Servicios",
   "page.home.services.first.title": "Desarrollo Web",
@@ -19,6 +19,7 @@
   "page.home.projects.neweyesmedia": "new eyes media fue rediseñado para mejorar la experiencia del usuario y la interacción con la marca.",
   "page.home.projects.fifth": "Una aplicación para ver los campeones de League of Legends, en este proyecto se hace uso de la ",
   "page.home.projects.button": "VER PROYECTO",
+  "page.home.skills.title": "Mis habilidades",
   "page.home.contact": "Si necesitas ayuda o quieres trabajar conmigo, no dudes en contactarme.",
   "page.home.fab": "Chat conmigo"
 }

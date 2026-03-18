@@ -2,6 +2,7 @@ import publicmee from '../assets/img/publicmee.png';
 import neweyesmedia from '../assets/img/new-eyes-media.png';
 import legends from '../assets/img/legends-never-die.jpg';
 import thevetbook from '../assets/img/thevetbook.png';
+import thebillone from '../assets/img/thebillone.png';
 import ProjectCard from '@/components/ProjectCard';
 import { FormattedMessage } from 'react-intl';
 export default function Projects() {
@@ -15,6 +16,22 @@ export default function Projects() {
         </div>
       </div>
 
+      <div className="mt-5 py-4 mb-5">
+        <ProjectCard
+          name="The Bill One"
+          description={<FormattedMessage id="page.home.projects.thebillone" />}
+          technologies={[
+            'Facturación electrónica El Salvador',
+            'DTE',
+            'Software para empresas',
+            'Sistema de facturación',
+          ]}
+          reverse={false}
+          image={thebillone}
+          url="https://thebillone.com/"
+          addLink
+        />
+      </div>
       <div className="mt-5 py-4 mb-5">
         <ProjectCard
           name="The Vet Book"

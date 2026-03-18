@@ -1,8 +1,18 @@
-import { Montserrat as customFont } from 'next/font/google'
+import localFont from 'next/font/local';
 
-export const font = customFont({
-  weight: ['400', '700'],
+export const font = localFont({
   variable: '--custom-font',
-  subsets: ['latin']
-  // preload: false
-})
+  fallback: ['system-ui', 'sans-serif'],
+  src: [
+    {
+      path: './montserrat/Montserrat-Regular.ttf',
+      style: 'normal',
+      weight: '400',
+    },
+    {
+      path: './montserrat/Montserrat-Bold.ttf',
+      style: 'normal',
+      weight: '700',
+    },
+  ],
+});

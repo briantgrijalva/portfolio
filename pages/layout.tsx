@@ -18,6 +18,8 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
               </nav>
               <div className="d-flex">
                 <a href='#work'><FormattedMessage id="page.nav.work" /></a>
+                <a href='#about'><FormattedMessage id="page.nav.about" /></a>
+                <a href='#experience'><FormattedMessage id="page.nav.experience" /></a>
                 <a href='#contact'><FormattedMessage id="page.nav.contact" /></a>
 
                 <div style={{width: '1px', backgroundColor: '#141414'}}></div>

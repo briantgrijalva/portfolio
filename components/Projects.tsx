@@ -4,8 +4,9 @@ import legends from '../assets/img/legends-never-die.jpg';
 import thevetbook from '../assets/img/thevetbook.png';
 import thebillone from '../assets/img/thebillone.png';
 import ProjectCard from '@/components/ProjectCard';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 export default function Projects() {
+  const intl = useIntl();
   return (
     <div className="container">
       <div className="row justify-content-center mt-5">
@@ -21,10 +22,13 @@ export default function Projects() {
           name="The Bill One"
           description={<FormattedMessage id="page.home.projects.thebillone" />}
           technologies={[
-            'Facturación electrónica El Salvador',
-            'DTE',
-            'Software para empresas',
-            'Sistema de facturación',
+             intl.formatMessage({ id: 'page.home.projects.thebillone.tech.next' }),
+             intl.formatMessage({ id: 'page.home.projects.thebillone.tech.react' }),
+             intl.formatMessage({ id: 'page.home.projects.thebillone.tech.typescript' }),
+             intl.formatMessage({ id: 'page.home.projects.thebillone.tech.node' }),
+             intl.formatMessage({ id: 'page.home.projects.thebillone.tech.postgres' }),
+             intl.formatMessage({ id: 'page.home.projects.thebillone.tech.prisma' }),
+             intl.formatMessage({ id: 'page.home.projects.thebillone.tech.docker' }),
           ]}
           reverse={false}
           image={thebillone}
@@ -36,7 +40,7 @@ export default function Projects() {
         <ProjectCard
           name="The Vet Book"
           description={<FormattedMessage id="page.home.projects.thevetbook" />}
-          technologies={['Next js', 'Tailwind', 'UI/UX', 'TypeScript', 'React']}
+           technologies={[intl.formatMessage({ id: 'page.home.projects.tech.tailwind' }), intl.formatMessage({ id: 'page.home.projects.tech.uiux' }), intl.formatMessage({ id: 'page.home.projects.tech.typescript' }), intl.formatMessage({ id: 'page.home.projects.tech.react' })]}
           reverse={false}
           image={thevetbook}
           url="https://thevetbook.com/"
@@ -49,7 +53,7 @@ export default function Projects() {
           description={
             <FormattedMessage id="page.home.projects.neweyesmedia" />
           }
-          technologies={['WordPress', 'Website Design', 'UI/UX']}
+           technologies={[intl.formatMessage({ id: 'page.home.projects.tech.wordpress' }), intl.formatMessage({ id: 'page.home.projects.tech.uiux' })]}
           reverse={false}
           image={neweyesmedia}
           url="https://neweyesmedia.net/"
@@ -60,7 +64,7 @@ export default function Projects() {
         <ProjectCard
           name="Publicmee"
           description={<FormattedMessage id="page.home.projects.publicmee" />}
-          technologies={['WordPress', 'Website Design', 'UI/UX']}
+           technologies={[intl.formatMessage({ id: 'page.home.projects.tech.wordpress' }), intl.formatMessage({ id: 'page.home.projects.tech.uiux' })]}
           reverse={false}
           image={publicmee}
           url="https://publicmee.com/"
@@ -71,7 +75,7 @@ export default function Projects() {
         <ProjectCard
           name="Legends Never Die"
           description={<FormattedMessage id="page.home.projects.fifth" />}
-          technologies={['Next js', 'Tailwind', 'UI/UX', 'TypeScript', 'React']}
+           technologies={[intl.formatMessage({ id: 'page.home.projects.tech.api' }), intl.formatMessage({ id: 'page.home.projects.tech.typescript' }), intl.formatMessage({ id: 'page.home.projects.tech.react' })]}
           reverse={false}
           image={legends}
           url="https://legends-never-die-bg.netlify.app/"

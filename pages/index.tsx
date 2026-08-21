@@ -42,10 +42,10 @@ export default function HomePage() {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta
-          name="keywords"
-          content="desarrollo web, páginas web, desarrollador web, crear página web, diseño web, aplicaciones web, desarrollo web profesional, programador web, full stack developer, desarrollo de software, creación de sitios web, desarrollo web el salvador, desarrollador web san salvador, páginas web el salvador, diseño web moderno, desarrollo frontend, desarrollo backend, react developer, next.js developer, typescript developer"
-        />
+         <meta
+           name="keywords"
+           content="full-stack software engineer, TypeScript engineer, React developer, Next.js engineer, Node.js developer, PostgreSQL, product engineer, software engineer, remote software engineer"
+         />
         <meta name="author" content="Briant Grijalva" />
         <meta name="geo.region" content="SV" />
         <meta name="geo.placename" content="El Salvador" />
@@ -97,14 +97,14 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'ProfessionalService',
+            '@type': 'Person',
             '@id': 'https://briantgrijalva.com',
-            name: 'Briant Grijalva - Desarrollo Web',
+            name: 'Briant Grijalva - Full-Stack Software Engineer',
             description: intl.formatMessage({
               id: 'page.home.head.meta.description',
             }),
             url: 'https://briantgrijalva.com',
-            telephone: '+503',
+             jobTitle: 'Full-Stack Software Engineer',
             address: {
               '@type': 'PostalAddress',
               addressCountry: 'SV',
@@ -116,63 +116,17 @@ export default function HomePage() {
               latitude: '13.794185',
               longitude: '-88.89653',
             },
-            areaServed: [
-              {
-                '@type': 'Country',
-                name: 'El Salvador',
-              },
-              {
-                '@type': 'Place',
-                name: 'Latinoamérica',
-              },
-              {
-                '@type': 'Place',
-                name: 'América Central',
-              },
-            ],
-            priceRange: '$$',
-            image: 'https://briantgrijalva.com/briant-grijalva.jpg',
+             image: 'https://briantgrijalva.com/briant-grijalva.jpg',
             founder: {
               '@type': 'Person',
               name: 'Briant Grijalva',
-              jobTitle: 'Full Stack Web Developer',
+               jobTitle: 'Full-Stack Software Engineer',
               image: 'https://briantgrijalva.com/briant-grijalva.jpg',
             },
             sameAs: [
               'https://github.com/briantgrijalva',
               'https://www.linkedin.com/in/briantgrijalva',
             ],
-            hasOfferCatalog: {
-              '@type': 'OfferCatalog',
-              name: 'Servicios de Desarrollo Web',
-              itemListElement: [
-                {
-                  '@type': 'Offer',
-                  itemOffered: {
-                    '@type': 'Service',
-                    name: 'Desarrollo Web',
-                    description:
-                      'Desarrollo de aplicaciones web personalizadas',
-                  },
-                },
-                {
-                  '@type': 'Offer',
-                  itemOffered: {
-                    '@type': 'Service',
-                    name: 'Diseño Web',
-                    description: 'Creación de sitios web profesionales',
-                  },
-                },
-                {
-                  '@type': 'Offer',
-                  itemOffered: {
-                    '@type': 'Service',
-                    name: 'Diseño UI/UX',
-                    description: 'Diseño de interfaces de usuario',
-                  },
-                },
-              ],
-            },
           }),
         }}
       />
@@ -186,9 +140,13 @@ export default function HomePage() {
                   <FormattedMessage id="page.home.title" />
                 </h1>
 
-                <p className="mt-4">
+                <p className={`${styles.heroDescription} mt-4`}>
                   <FormattedMessage id="page.home.description" />
                 </p>
+                <div className={styles.heroDetails}>
+                  <span className={styles.heroStack}><FormattedMessage id="page.home.stack" /></span>
+                  <span className={styles.heroAvailability}><FormattedMessage id="page.home.availability" /></span>
+                </div>
 
                 <div className="btn_container mt-5">
                   <a href="#work" className="button">
@@ -217,10 +175,20 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section id="work" className="my-5 py-5">
+      <section id="about" className="my-5 py-5">
+        <div className="container">
+          <div className="row justify-content-center mt-5">
+            <div className="col-md-12 col-lg-10">
+              <h2><FormattedMessage id="page.home.about.title" /></h2>
+              <p><FormattedMessage id="page.home.about.description" /></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" className="my-5 py-5">
         <Services />
       </section>
-      <section className="mt-5 py-5 mb-5">
+      <section id="work" className="mt-5 py-5 mb-5">
         <Projects />
       </section>
       <section id="skills" className="mt-5 pt-5 mb-5 pb-5">

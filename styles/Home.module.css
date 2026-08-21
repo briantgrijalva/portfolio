@@ -10,6 +10,35 @@
   padding-top: 100px;
 }
 
+.heroDescription {
+  max-width: 680px;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.heroDetails {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  color: #555555;
+  font-size: 15px;
+}
+
+.heroStack {
+  padding: 8px 12px;
+  border-left: 3px solid #087EA4;
+  background: #eef8fa;
+  color: #3f4b59;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.heroAvailability {
+  color: #555555;
+  line-height: 1.5;
+}
+
 .heroImage {
   /* object-fit: cover;
   object-position: top; */
@@ -79,6 +108,162 @@
   padding-right: 0;
 }
 
+.experienceTimeline {
+  position: relative;
+  width: 100%;
+  margin: 72px auto 0;
+  padding-left: 164px;
+}
+
+.experienceTimeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 128px;
+  width: 2px;
+  background: #d8d8d8;
+  content: '';
+}
+
+.timelineItem {
+  position: relative;
+  padding-bottom: 42px;
+}
+
+.timelineItem:last-child {
+  padding-bottom: 0;
+}
+
+.timelineDate {
+  position: absolute;
+  top: 27px;
+  left: -164px;
+  width: 108px;
+  color: #555555;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.timelineMarker {
+  position: absolute;
+  top: 30px;
+  left: -42px;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: #087EA4;
+  box-shadow: 0 0 0 2px #087EA4;
+}
+
+.timelineCard {
+  position: relative;
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  min-height: 0;
+  padding: 27px 32px 30px;
+  border: 3px solid #555555;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #555555;
+  box-shadow: 0 8px 22px rgba(20, 20, 20, .06);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.timelineCard::before {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  width: 5px;
+  border-radius: 8px 0 0 8px;
+  background: transparent;
+  content: '';
+}
+
+.timelineCard:hover {
+  border-color: #087EA4;
+  box-shadow: 0 12px 28px rgba(20, 20, 20, .1);
+  transform: translateY(-2px);
+}
+
+.timelineFeatured {
+  border-color: #087EA4;
+  background: #f8fcfd;
+}
+
+.timelineFeatured::before {
+  background: #087EA4;
+}
+
+.timelineIcon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border: 1px solid rgba(8, 126, 164, .25);
+  border-radius: 50%;
+  background: #eef8fa;
+}
+
+.timelineCard h3,
+.timelineCard p {
+  margin: 0;
+  text-align: left;
+}
+
+.timelineCard h3 {
+  margin-top: 4px;
+  color: #3f4b59;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.timelineCard p {
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.timelineCard .timelineCompany {
+  color: #3f4b59;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.timelineMobileDate {
+  display: none;
+}
+
+.timelineBullets {
+  width: 100%;
+  margin: 2px 0 0;
+  padding-left: 20px;
+}
+
+.timelineBullets li {
+  margin: 6px 0;
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.skillPlaceholder {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border: 2px solid #087EA4;
+  border-radius: 8px;
+  color: #087EA4;
+  font-size: 13px;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 992px) {
   .heroSection {
     height: 88vh;
@@ -93,7 +278,62 @@
     padding-top: 40px;
   } 
 
+  .heroDetails {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .heroStack {
+    max-width: 100%;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
   .buttonNoline {
     font-size: 16px;
+  }
+
+  .experienceTimeline {
+    margin-top: 52px;
+    padding-left: 0;
+  }
+
+  .experienceTimeline::before {
+    display: none;
+  }
+
+  .timelineDate {
+    display: none;
+  }
+
+  .timelineMobileDate {
+    display: block;
+    color: #087EA4 !important;
+    font-size: 14px !important;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+
+  .timelineMarker {
+    display: none;
+  }
+
+  .timelineCard {
+    padding: 22px 20px 24px;
+  }
+
+  .timelineCard:hover {
+    transform: none;
+  }
+
+  .timelineCard h3 {
+    font-size: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timelineCard {
+    transition: none;
   }
 }
